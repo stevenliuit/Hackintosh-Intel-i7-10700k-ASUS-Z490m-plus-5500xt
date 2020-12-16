@@ -48,3 +48,9 @@
         * 如果不起作用，请选择 "Other Os"
     * **IMPORTANT:** 你必须设置 Onboard GPU（集成显卡） 内存为 64MB 使用集成显卡没有任何问题
 
+# USB已经定制完成了
+* 默认HS09和SH10应该还有SS09和SS10为USB 3.0 由于我用不到 所以没动 
+* 主板接口是按照我的布线接的 大家可以根据参考自己修改接口 限制在15个接口内即可
+下图为我的定制接口说明 大家自行研究 目前没问题
+![avatar](image/hackingtosh-4.png)
+![avatar](image/hackingtosh-5.png)
