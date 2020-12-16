@@ -1,14 +1,14 @@
 # Hackintosh-Intel-i7-10700k-ASUS-Z490m-plus-5500xt
-Hackintosh 10700k + 5500xt双风扇8g显卡
+* Hackintosh 10700k + 5500xt双风扇8g显卡
 
-硬件配置
-CPU:i7-10700K
-内存:三星DDR4 16G 3200MHZ
-硬盘:intel 480g 企业盘（SSDSC2KW480H6）
-声卡:ALC887 (仿冒id 99)
-网卡:I219-V/华硕
-独立显卡:AMD Radeon RX 5500 XT 8G /技嘉
-无线网卡+蓝牙:fenvi FV-T919（BCM94360CD）
+## 硬件配置
+* CPU:i7-10700K
+* 内存:三星DDR4 16G 3200MHZ
+* 硬盘:intel 480g 企业盘（SSDSC2KW480H6）
+* 声卡:ALC887 (仿冒id 99)
+* 网卡:I219-V/华硕
+* 独立显卡:AMD Radeon RX 5500 XT 8G /技嘉
+* 无线网卡+蓝牙:fenvi FV-T919（BCM94360CD）
 
 ## 当前引导Bootlader
 **Opencore 0.6.6**
