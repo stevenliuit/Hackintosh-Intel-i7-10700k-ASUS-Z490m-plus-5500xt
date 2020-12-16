@@ -3,6 +3,7 @@
 
 ## 硬件配置
 * CPU:i7-10700K
+* 主板:华硕 PRIME Z490-PLUS
 * 内存:三星DDR4 16G 3200MHZ
 * 硬盘:intel 480g 企业盘（SSDSC2KW480H6）
 * 声卡:ALC887 (仿冒id 99)
