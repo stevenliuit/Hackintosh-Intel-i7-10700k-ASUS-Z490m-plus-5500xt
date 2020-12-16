@@ -54,3 +54,15 @@
 下图为我的定制接口说明 大家自行研究 目前没问题
 ![avatar](image/hackingtosh-4.png)
 ![avatar](image/hackingtosh-5.png)
+
+
+## 正常的选项
+- [x] Intel UHD Graphics 630 (iGPU), 正常使用 **Metal Support** +5500 XT显卡 双显硬解码 工作正常 
+- [x] 声卡Realtek ALC887 工作正常
+- [x] Intel® I219V11 网卡工作正常
+- [x] FV-T919 网卡蓝牙 工作正常 蓝牙USB已改内建
+- [x] 睡眠/唤醒 工作正常
+- [x] 重启和关机 工作正常
+
+## 无法工作的内容
+- [ ] 暂未发现.
