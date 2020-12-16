@@ -11,22 +11,26 @@
 * 独立显卡:AMD Radeon RX 5500 XT 8G /技嘉
 * 无线网卡+蓝牙:fenvi FV-T919（BCM94360CD）
 
+
+
 ## 当前引导Bootlader
 **Opencore 0.6.6**
 
-## 机芯文件 随意修改了一个 自己根据图片 自己去修改吧
-## 我这里下载的是OpenCore Configurator 2.19.0版本 
-下载地址:[OpenCore Configurator 2.19.0版本](https://mackie100projects.altervista.org/download-opencore-configurator/)
+
+# 配置机芯文件和相关工具
+* 机芯文件 随意修改了一个 自己根据图片 自己去修改吧
+* 我这里下载的是OpenCore Configurator 2.19.0版本 
+* 下载地址:[OpenCore Configurator 2.19.0版本](https://mackie100projects.altervista.org/download-opencore-configurator/)
+
 ![avatar](image/hackingtosh-1.png)
 
-## 我的电脑配置鲁大师截图
+* 我的电脑配置鲁大师截图
 ![avatar](image/hackingtosh-2.png)
 
-## 支持双显硬解码
+* 支持双显硬解码
 ![avatar](image/hackingtosh-3.png)
 
 # 安装选项
-
 **Bios 设置**
 * 关闭的选项（自行寻找）
     * Fast Boot
