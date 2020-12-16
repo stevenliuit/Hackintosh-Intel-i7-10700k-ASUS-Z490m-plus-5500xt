@@ -14,7 +14,7 @@
 
 
 ## 当前引导Bootlader
-**Opencore 0.6.6**
+**Opencore 0.6.4**
 
 
 # 配置机芯文件和相关工具
