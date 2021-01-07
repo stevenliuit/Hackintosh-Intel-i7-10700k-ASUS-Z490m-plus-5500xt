@@ -16,7 +16,7 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>加载CPU原生电源管理（开启节能四项）【必须】</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -24,7 +24,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>修复RTC禁止AWAC（或者使用RTC0.aml补丁，二者选其一）【必须】</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -32,7 +32,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>加载节能第五项（断电后自动重启生效，PC基本通用的补丁）</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -40,7 +40,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>解决大部分睡眠即醒问题</string>
 				<key>Enabled</key>
 				<false/>
 				<key>Path</key>
@@ -181,7 +181,7 @@
 				<key>Address</key>
 				<integer>4275159040</integer>
 				<key>Comment</key>
-				<string>Haswell: SB_RCBA is a 0x4 page memory region, containing SPI_BASE at 0x3800 (SPI_BASE_ADDRESS)</string>
+				<string>Haswell芯片提供的内存寻址修复、此平台有关内存方面的问题请启用</string>
 				<key>Enabled</key>
 				<false/>
 			</dict>
@@ -189,7 +189,7 @@
 				<key>Address</key>
 				<integer>4278190080</integer>
 				<key>Comment</key>
-				<string>Generic: PCI root is a 0x1000 page memory region used by some types of firmware</string>
+				<string>开机卡PCI Configuration 请开启</string>
 				<key>Enabled</key>
 				<false/>
 			</dict>
@@ -563,7 +563,7 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>Comment</key>
-				<string></string>
+				<string>AppletyMCEDriver.kext是一检测ECC专用内存的驱动文件</string>
 				<key>Enabled</key>
 				<false/>
 				<key>Identifier</key>
@@ -595,7 +595,7 @@
 				<key>BundlePath</key>
 				<string>System/Library/Extensions/IONetworkingFamily.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>基本的网卡驱动，有些网卡可以直接驱动。</string>
 				<key>Enabled</key>
 				<false/>
 				<key>ExecutablePath</key>
@@ -618,7 +618,7 @@
 				<key>Base</key>
 				<string>__ZN8AppleRTC18setupDateTimeAlarmEPK11RTCDateTime</string>
 				<key>Comment</key>
-				<string>Disable RTC wake scheduling</string>
+				<string>禁用RTC唤醒计划</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -648,7 +648,7 @@
 				<key>Base</key>
 				<string>_AcpiOsVprintf</string>
 				<key>Comment</key>
-				<string>Disable ACPI logging</string>
+				<string>禁用ACPI日志记录</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -678,7 +678,7 @@
 				<key>Base</key>
 				<string>__ZN11BCM5701Enet14getAdapterInfoEv</string>
 				<key>Comment</key>
-				<string>Broadcom BCM57785 patch</string>
+				<string>Broadcom BCM57785补丁</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -708,7 +708,7 @@
 				<key>Base</key>
 				<string>_panic</string>
 				<key>Comment</key>
-				<string>Send panic string to serial port</string>
+				<string>向串行端口发送紧急字符串</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -738,7 +738,7 @@
 				<key>Base</key>
 				<string>_kernel_debug_string_early</string>
 				<key>Comment</key>
-				<string>Send early prints to serial port</string>
+				<string>将早期打印发送到串行端口</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -768,7 +768,7 @@
 				<key>Base</key>
 				<string>_vstart</string>
 				<key>Comment</key>
-				<string>Print K and dead loop</string>
+				<string>打印K和死循环</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -798,11 +798,11 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>ASUS F1 patch fix</string>
+				<string>华硕F1补丁修复</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>dTMPtw==</data>
 				<key>Identifier</key>
@@ -890,6 +890,8 @@
 			<false/>
 			<key>PickerMode</key>
 			<string>External</string>
+			<key>PickerVariant</key>
+			<string>Auto</string>
 			<key>PollAppleHotKeys</key>
 			<true/>
 			<key>ShowPicker</key>
@@ -1170,6 +1172,8 @@
 			<integer>50</integer>
 			<key>PlayChime</key>
 			<string></string>
+			<key>SetupDelay</key>
+			<integer>0</integer>
 			<key>VolumeAmplifier</key>
 			<integer>0</integer>
 		</dict>
