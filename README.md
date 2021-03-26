@@ -18,7 +18,8 @@
 
 ## OpenCore 0.6.6升级0.6.7攻略
 * 替换完efi后重启在开机引导选项那里选择CleanNvram 清空一下 否则开机后提示版本还是0.6.6
-
+![avatar](image/hackingtosh-addclean.png)
+![avatar](image/hackingtosh-bootclean.png)
 
 # 配置机芯文件和相关工具
 * 机芯文件 随意修改了一个 自己根据图片 自己去修改吧
