@@ -8,15 +8,15 @@
 * 硬盘:intel 480g 企业盘（SSDSC2KW480H6）
 * 声卡:ALC887 (仿冒id 99)
 * 网卡:I219-V/华硕
-* 独立显卡:AMD Radeon RX 5500 XT 8G /技嘉
+* 独立显卡:AMD Radeon RX 5500 XT 8G /技嘉[显卡涨价太猛 已经卖掉回血]
 * 无线网卡+蓝牙:fenvi FV-T919（BCM94360CD）
 
 
 
 ## 当前引导Bootlader
-**Opencore 0.6.7**
+**Opencore 0.7.3**
 
-## OpenCore 0.6.6升级0.6.7攻略
+## OpenCore 0.6.6升级0.7.3攻略
 * 替换完efi后重启在开机引导选项那里选择CleanNvram 清空一下 否则开机后提示版本还是0.6.6
 ![avatar](image/hackingtosh-addclean.png)
 ![avatar](image/hackingtosh-bootclean.png)

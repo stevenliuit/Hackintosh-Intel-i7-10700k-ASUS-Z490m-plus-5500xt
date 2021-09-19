@@ -50,7 +50,7 @@
 				<key>Comment</key>
 				<string>SSDT-RX 5500 XT.aml</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Path</key>
 				<string>SSDT-RX 5500 XT.aml</string>
 			</dict>
@@ -89,6 +89,10 @@
 		<key>Patch</key>
 		<array>
 			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 				<key>Comment</key>
 				<string>_Q11 to XQ11</string>
 				<key>Count</key>
@@ -115,6 +119,10 @@
 				<data></data>
 			</dict>
 			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 				<key>Comment</key>
 				<string>_Q12 to XQ12</string>
 				<key>Count</key>
@@ -141,6 +149,10 @@
 				<data></data>
 			</dict>
 			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 				<key>Comment</key>
 				<string>GPRW</string>
 				<key>Count</key>
@@ -178,6 +190,8 @@
 			<key>ResetHwSig</key>
 			<false/>
 			<key>ResetLogoStatus</key>
+			<false/>
+			<key>SyncTableIds</key>
 			<false/>
 		</dict>
 	</dict>
@@ -222,6 +236,8 @@
 			<true/>
 			<key>EnableWriteUnprotector</key>
 			<true/>
+			<key>ForceBooterSignature</key>
+			<false/>
 			<key>ForceExitBootServices</key>
 			<false/>
 			<key>ProtectMemoryRegions</key>
@@ -298,6 +314,60 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
+				<string>BrcmBluetoothInjector.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>BrcmFirmwareData.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/BrcmFirmwareData</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>BrcmPatchRAM3.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/BrcmPatchRAM3</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
 				<string>VirtualSMC.kext</string>
 				<key>Comment</key>
 				<string></string>
@@ -356,7 +426,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/WhateverGreen</string>
 				<key>MaxKernel</key>
@@ -571,7 +641,7 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>Comment</key>
-				<string>AppletyMCEDriver.kext是一检测ECC专用内存的驱动文件</string>
+				<string></string>
 				<key>Enabled</key>
 				<false/>
 				<key>Identifier</key>
@@ -603,7 +673,7 @@
 				<key>BundlePath</key>
 				<string>System/Library/Extensions/IONetworkingFamily.kext</string>
 				<key>Comment</key>
-				<string>基本的网卡驱动，有些网卡可以直接驱动。</string>
+				<string></string>
 				<key>Enabled</key>
 				<false/>
 				<key>ExecutablePath</key>
@@ -626,7 +696,7 @@
 				<key>Base</key>
 				<string>__ZN8AppleRTC18setupDateTimeAlarmEPK11RTCDateTime</string>
 				<key>Comment</key>
-				<string>禁用RTC唤醒计划</string>
+				<string>Disable RTC wake scheduling</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -656,7 +726,7 @@
 				<key>Base</key>
 				<string>_AcpiOsVprintf</string>
 				<key>Comment</key>
-				<string>禁用ACPI日志记录</string>
+				<string>Disable ACPI logging</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -686,7 +756,7 @@
 				<key>Base</key>
 				<string>__ZN11BCM5701Enet14getAdapterInfoEv</string>
 				<key>Comment</key>
-				<string>Broadcom BCM57785补丁</string>
+				<string>Broadcom BCM57785 patch</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -716,7 +786,7 @@
 				<key>Base</key>
 				<string>_panic</string>
 				<key>Comment</key>
-				<string>向串行端口发送紧急字符串</string>
+				<string>Send panic string to serial port</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -746,7 +816,7 @@
 				<key>Base</key>
 				<string>_kernel_debug_string_early</string>
 				<key>Comment</key>
-				<string>将早期打印发送到串行端口</string>
+				<string>Send early prints to serial port</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -776,7 +846,7 @@
 				<key>Base</key>
 				<string>_vstart</string>
 				<key>Comment</key>
-				<string>打印K和死循环</string>
+				<string>Print K and dead loop</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -806,7 +876,7 @@
 				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
-				<string>华硕F1补丁修复</string>
+				<string>F1 Startup patch</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -865,6 +935,8 @@
 			<true/>
 			<key>PowerTimeoutKernelPanic</key>
 			<true/>
+			<key>ProvideCurrentCpuInfo</key>
+			<false/>
 			<key>SetApfsTrimTimeout</key>
 			<integer>-1</integer>
 			<key>ThirdPartyDrives</key>
@@ -874,6 +946,8 @@
 		</dict>
 		<key>Scheme</key>
 		<dict>
+			<key>CustomKernel</key>
+			<false/>
 			<key>FuzzyMatch</key>
 			<true/>
 			<key>KernelArch</key>
@@ -895,7 +969,7 @@
 			<key>HideAuxiliary</key>
 			<false/>
 			<key>LauncherOption</key>
-			<string>Disabled</string>
+			<string>Full</string>
 			<key>LauncherPath</key>
 			<string>Default</string>
 			<key>PickerAttributes</key>
@@ -905,7 +979,7 @@
 			<key>PickerMode</key>
 			<string>External</string>
 			<key>PickerVariant</key>
-			<string>Modern</string>
+			<string>Auto</string>
 			<key>PollAppleHotKeys</key>
 			<true/>
 			<key>ShowPicker</key>
@@ -945,6 +1019,8 @@
 				<string>Not signed for security reasons</string>
 				<key>Enabled</key>
 				<false/>
+				<key>Flavour</key>
+				<string>Auto</string>
 				<key>Name</key>
 				<string>CustomOS</string>
 				<key>Path</key>
@@ -959,12 +1035,14 @@
 			<true/>
 			<key>AllowSetDefault</key>
 			<true/>
+			<key>AllowToggleSip</key>
+			<false/>
 			<key>ApECID</key>
 			<integer>0</integer>
 			<key>AuthRestart</key>
 			<false/>
 			<key>BlacklistAppleUpdate</key>
-			<false/>
+			<true/>
 			<key>DmgLoading</key>
 			<string>Disabled</string>
 			<key>EnablePassword</key>
@@ -994,29 +1072,13 @@
 				<key>Comment</key>
 				<string>Not signed for security reasons</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
+				<key>Flavour</key>
+				<string>Auto</string>
 				<key>Name</key>
 				<string>UEFI Shell</string>
 				<key>Path</key>
 				<string>OpenShell.efi</string>
-				<key>RealPath</key>
-				<false/>
-				<key>TextMode</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Auxiliary</key>
-				<false/>
-				<key>Comment</key>
-				<string>Memory testing utility</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Name</key>
-				<string>memcheck</string>
-				<key>Path</key>
-				<string>memcheck/memcheck.efi</string>
 				<key>RealPath</key>
 				<false/>
 				<key>TextMode</key>
@@ -1031,6 +1093,8 @@
 				<string>Perform shutdown</string>
 				<key>Enabled</key>
 				<true/>
+				<key>Flavour</key>
+				<string>Auto</string>
 				<key>Name</key>
 				<string>Shutdown</string>
 				<key>Path</key>
@@ -1049,10 +1113,32 @@
 				<string></string>
 				<key>Enabled</key>
 				<true/>
+				<key>Flavour</key>
+				<string>Auto</string>
 				<key>Name</key>
 				<string>CleanNvram</string>
 				<key>Path</key>
 				<string>CleanNvram.efi</string>
+				<key>RealPath</key>
+				<false/>
+				<key>TextMode</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Auxiliary</key>
+				<false/>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Flavour</key>
+				<string>Auto</string>
+				<key>Name</key>
+				<string>RtcRw</string>
+				<key>Path</key>
+				<string>RtcRw.efi</string>
 				<key>RealPath</key>
 				<false/>
 				<key>TextMode</key>
@@ -1081,7 +1167,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>keepsyms=1 debug=0x100 agdpmod=pikera</string>
+				<string>keepsyms=1 debug=0x100</string>
 				<key>run-efi-updater</key>
 				<string>No</string>
 			</dict>
@@ -1143,16 +1229,16 @@
 		<false/>
 		<key>Generic</key>
 		<dict>
-			<key>AdviseWindows</key>
+			<key>AdviseFeatures</key>
 			<false/>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string>C020539024NPHCDJA</string>
+			<string>C02051300GUPHCD8C</string>
 			<key>ProcessorType</key>
 			<integer>4105</integer>
 			<key>ROM</key>
-			<data>oDEwbVcl</data>
+			<data>mIY5bOZ9</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemMemoryStatus</key>
@@ -1160,9 +1246,9 @@
 			<key>SystemProductName</key>
 			<string>iMac20,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02DXQZ4PN5T</string>
+			<string>C02DVLZQPN5T</string>
 			<key>SystemUUID</key>
-			<string>E04E6CEE-16E2-467F-8765-5F9F81E0502B</string>
+			<string>1D1E3D48-491D-4F23-9007-1818FAD1FD62</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -1192,6 +1278,23 @@
 			<key>MinVersion</key>
 			<integer>0</integer>
 		</dict>
+		<key>AppleInput</key>
+		<dict>
+			<key>AppleEvent</key>
+			<string>Auto</string>
+			<key>CustomDelays</key>
+			<false/>
+			<key>GraphicsInputMirroring</key>
+			<false/>
+			<key>KeyInitialDelay</key>
+			<integer>50</integer>
+			<key>KeySubsequentDelay</key>
+			<integer>5</integer>
+			<key>PointerSpeedDiv</key>
+			<integer>1</integer>
+			<key>PointerSpeedMul</key>
+			<integer>1</integer>
+		</dict>
 		<key>Audio</key>
 		<dict>
 			<key>AudioCodec</key>
@@ -1217,20 +1320,30 @@
 		<true/>
 		<key>Drivers</key>
 		<array>
-			<string>OpenRuntime.efi</string>
-			<string>OpenCanopy.efi</string>
-			<string>OpenHfsPlus.efi</string>
-			<string>AudioDxe.efi</string>
-			<string>CrScreenshotDxe.efi</string>
-			<string>#OpenUsbKbDxe.efi</string>
-			<string>#UsbMouseDxe.efi</string>
-			<string>#Ps2KeyboardDxe.efi</string>
-			<string>#Ps2MouseDxe.efi</string>
-			<string>#HiiDatabase.efi</string>
-			<string>#NvmExpressDxe.efi</string>
-			<string>#XhciDxe.efi</string>
-			<string>#ExFatDxe.efi</string>
-			<string>#PartitionDxe.efi</string>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>OpenRuntime.efi</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>OpenCanopy.efi</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>OpenHfsPlus.efi</string>
+			</dict>
 		</array>
 		<key>Input</key>
 		<dict>
@@ -1262,7 +1375,7 @@
 			<key>ForceResolution</key>
 			<false/>
 			<key>GopPassThrough</key>
-			<false/>
+			<string>Disabled</string>
 			<key>IgnoreTextInGraphics</key>
 			<false/>
 			<key>ProvideConsoleGop</key>
@@ -1288,7 +1401,7 @@
 			<false/>
 			<key>AppleDebugLog</key>
 			<false/>
-			<key>AppleEvent</key>
+			<key>AppleEg2Info</key>
 			<false/>
 			<key>AppleFramebufferInfo</key>
 			<false/>
@@ -1325,11 +1438,19 @@
 			<false/>
 			<key>DisableSecurityPolicy</key>
 			<false/>
+			<key>EnableVectorAcceleration</key>
+			<false/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
+			<key>ForceOcWriteFlash</key>
+			<false/>
+			<key>ForgeUefiSupport</key>
+			<false/>
 			<key>IgnoreInvalidFlexRatio</key>
 			<false/>
 			<key>ReleaseUsbOwnership</key>
+			<false/>
+			<key>ReloadOptionRoms</key>
 			<false/>
 			<key>RequestBootVarRouting</key>
 			<true/>
